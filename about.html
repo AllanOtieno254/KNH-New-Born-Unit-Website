@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+
+ <!-- Header section -->
+    <section id="header">
+        <!-- Logo + Text both clickable -->
+        <a href="../index.html" class="brand">
+            <img id="logo" src="../img/logo1.png" alt="Logo">
+            <span>KNH Newborn Unit</span>
+        </a>
+
+        <!-- Hamburger Toggle Button -->
+        <div id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navbar -->
+        <ul id="navbar">
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../parent-resources.html">Parent Resources</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </section>
+
+
+<!-- About hero section -->
+    <section id="about-hero">
+        <video autoplay muted loop playsinline class="hero-bg">
+            <source src="./vid/vid1.mov" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <h1>Compassionate Care for Our Newborns</h1>
+            <p>Specialised neonatal support at Kenyatta National Hospital.</p>
+            <a class="btn btn-primary" href="#nbu-story-team">Learn More About Us</a>
+        </div>
+    </section>
+
+<!-- Our story and team intro -->
+    <section id="nbu-story-team">
+
+        <!-- OUR STORY -->
+        <div class="story">
+            <h2>Our Story</h2>
+            <p>
+                The KNH Newborn Unit has grown into one of Kenya's leading neonatal facilities. 
+                From humble beginnings, our unit now cares for hundreds of newborns annually, 
+                using advanced technology and highly trained staff to ensure the best outcomes.
+            </p>
+        </div>
+
+        <!-- TEAM INTRO -->
+        <div class="team-intro">
+            <h2>Meet Our Team</h2>
+            <p>
+                Our team consists of pediatricians, neonatal nurses, lactation specialists, 
+                and support staff dedicated to newborn care.
+            </p>
+        </div>
+
+        <!-- STATIC TEAM CARDS – 4 in one row -->
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="./img/about img/doc1.jpg">
+                <h3>Dr. Jane Doe</h3>
+                <p>Chief Neonatologist</p>
+            </div>
+
+            <div class="team-card">
+                <img src="./img/about img/nurse1.jpg">
+                <h3>Nurse Mary</h3>
+                <p>Senior NICU Nurse</p>
+            </div>
+
+            <div class="team-card">
+                <img src="./img/about img/doc6.jpg">
+                <h3>Dr. John Smith</h3>
+                <p>Pediatric Consultant</p>
+            </div>
+
+            <div class="team-card">
+                <img src="./img/about img/nurse3.png">
+                <h3>Nurse mike</h3>
+                <p>Lactation Specialist</p>
+            </div>
+        </div>
+
+        <!-- SPECIALISED DOCTORS -->
+        <div class="carousel-section">
+            <h2>Specialised Doctors</h2>
+
+            <div class="carousel-grid">
+                <!-- CARD 1 -->
+                <div class="carousel-card">
+                    <button class="nav-btn prev" id="doc-prev">❮</button>
+
+                    <img id="doc-img" src="">
+                    <h3 id="doc-name"></h3>
+                    <p id="doc-role"></p>
+
+                    <button class="nav-btn next" id="doc-next">❯</button>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="carousel-card">
+                    <button class="nav-btn prev" id="doc2-prev">❮</button>
+
+                    <img id="doc2-img" src="">
+                    <h3 id="doc2-name"></h3>
+                    <p id="doc2-role"></p>
+
+                    <button class="nav-btn next" id="doc2-next">❯</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- NURSES -->
+        <div class="carousel-section">
+            <h2>Our Nurses</h2>
+
+            <div class="carousel-grid">
+                <!-- CARD 1 -->
+                <div class="carousel-card">
+                    <button class="nav-btn prev" id="nurse-prev">❮</button>
+
+                    <img id="nurse-img" src="">
+                    <h3 id="nurse-name"></h3>
+                    <p id="nurse-role"></p>
+
+                    <button class="nav-btn next" id="nurse-next">❯</button>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="carousel-card">
+                    <button class="nav-btn prev" id="nurse2-prev">❮</button>
+
+                    <img id="nurse2-img" src="">
+                    <h3 id="nurse2-name"></h3>
+                    <p id="nurse2-role"></p>
+
+                    <button class="nav-btn next" id="nurse2-next">❯</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-button-wrapper">
+            <a href="Team.html" class="view-team-btn">View Full Team</a>
+        </div>
+
+    </section>
+
+
+  <!-- about nbu main section   -->
+    <section id="about-nbu">
+    <h2>About KNH Newborn Unit</h2>
+
+    <p class="info">
+        Learn more about our mission, vision, and dedicated team providing exceptional newborn care.
+    </p>
+
+    <div class="about-content">
+
+        <!-- FLEX ROW BEGINS -->
+        <div class="about-cards">
+
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>
+                    To provide specialized, compassionate, and comprehensive care for all newborns,<br>
+                    particularly high-risk and premature infants, while supporting families throughout their journey.
+                </p>
+            </div>
+
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>
+                    To be world-class neonatal care unit offering the highest quality care,<br>
+                    innovative practices, and family-centered support, ensuring the best possible outcomes for newborns.
+                </p>
+            </div>
+
+            <div class="our-values">
+                <h3>Our Values</h3>
+                <ul>
+                    <li><strong>Compassion & Empathy</strong></li>
+                    <li><strong>Excellence in Care</strong></li>
+                    <li><strong>Innovation & Learning</strong></li>
+                    <li><strong>Family-Centered Approach</strong></li>
+                    <li><strong>Integrity & Accountability</strong></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- FLEX ROW ENDS -->
+
+    </div>
+    </section>
+
+    
+<!-- WHY OUR NBU IS UNIQUE -->
+    <section id="nbu-unique">
+        <h2>Why Our Newborn Unit is Unique</h2>
+        <p class="subtitle">Our commitment to excellence makes KNH NBU a leading neonatal care facility.</p>
+
+        <div class="unique-grid">
+
+            <div class="feature">
+                <h3>Advanced Neonatal Equipment</h3>
+                <p>State-of-the-art incubators, monitors & respiratory support for high-risk newborns.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Specialized Medical Team</h3>
+                <p>Highly trained neonatologists, pediatricians, and NICU nurses available 24/7.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Family-Centered Care</h3>
+                <p>We work closely with parents to ensure newborns receive emotional & physical support.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Research & Innovation</h3>
+                <p>Use of modern neonatal research to implement evidence-based practices.</p>
+            </div>
+
+        </div>
+    </section>
+<!-- ================================
+     MILESTONES TIMELINE SECTION
+================================== -->
+    <section id="nbu-timeline">
+        <h2>Our Milestones</h2>
+        <p class="subtitle">A journey of growth, excellence, and impact at KNH Newborn Unit.</p>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1995 — Unit Establishment</h3>
+                    <p>The KNH Newborn Unit was officially launched to support premature and critically ill infants.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2008 — Major Facility Upgrade</h3>
+                    <p>Introduction of advanced neonatal incubators and respiratory support machines.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2015 — Family Care Program</h3>
+                    <p>Adoption of Kangaroo Mother Care & enhanced parental involvement policies.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2021 — Digital Monitoring System</h3>
+                    <p>Rollout of electronic neonatal monitoring for improved accuracy and real-time data.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- VIDEO INTRO SECTION -->
+    <section id="nbu-video">
+        <div class="video-wrapper">
+            <video autoplay muted loop playsinline>
+                <source src="./vid/vid2.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-overlay">
+                <h2>Inside KNH Newborn Unit</h2>
+                <p>Watch how we care for our little heroes every day.</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+<!-- footer section -->
+    <footer id="main-footer">
+
+    <!-- Watermark -->
+    <div class="footer-watermark"></div>
+
+    <div class="footer-container">
+
+        <!-- Column 1 -->
+        <div class="footer-col">
+            <h3>NBU Quick Links</h3>
+            <ul>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Team.html">Meet the Team</a></li>
+                <li><a href="visiting-rules.html">Visiting Rules</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+            <h3>Parent Support</h3>
+            <ul>
+                <li><a href="parent-resources.html">Parent Resources</a></li>
+                <li><a href="breastfeeding.html">Breastfeeding Support</a></li>
+                <li><a href="nutrition.html">Nutrition & Lactation</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+            <h3>Legal & Policies</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Data Protection (GDPR)</a></li>
+                <li><a href="#">Patient Rights</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-col">
+            <h3>Emergency Contacts</h3>
+            <ul>
+                <li><a href="#">Emergency Hotline: 0800-123-456</a></li>
+                <li><a href="#">NICU Desk: +254 700 000 000</a></li>
+                <li><a href="#">NBU Nursing Station</a></li>
+                <li><a href="contact.html">Contact Page</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>© <span id="current-year"></span> KNH Newborn Unit — All Rights Reserved</p>
+        <p class="design-note">Designed for educational purposes</p>
+    </div>
+
+    </footer><!-- footer section -->
+    
+<!-- footer year js -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const yearSpan = document.getElementById("current-year");
+            const currentYear = new Date().getFullYear();
+            if (yearSpan) {
+                yearSpan.textContent = currentYear;
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
