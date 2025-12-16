@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book Appointment | NBU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/booking/public/booking.css">
+</head>
+<body>
+
+    <!-- Header section -->
+    <section id="header">
+        <!-- Logo + Text both clickable -->
+        <a href="/index.html" class="brand">
+            <img id="logo" src="/img/logo1.png" alt="Logo">
+            <span>KNH Newborn Unit</span>
+        </a>
+
+        <!-- Hamburger Toggle Button -->
+        <div id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navbar -->
+        <ul id="navbar">
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/parent-resources.html">Parent Resources</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </section>
+
+<!-- EMERGENCY BAR -->
+<div class="emergency-bar" id="emergencyBar">
+    🚨 Urgent Admission? <span id="emergencyAction">+254 720 000 000</span>
+</div>
+
+<!-- HERO -->
+<section class="booking-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Book an Appointment</h1>
+        <p>Schedule tours, consultations, and admission pre-registration.</p>
+    </div>
+</section>
+
+<!-- BOOKING SECTION -->
+<section class="booking-section">
+<div class="booking-container">
+
+    <div class="progress">
+        <div class="step active">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+        <div class="step">4</div>
+    </div>
+
+    <form id="bookingForm">
+
+        <!-- STEP 1 -->
+        <div class="form-step active">
+            <h2>Appointment Type</h2>
+            <select name="bookingType" required>
+                <option value="">Select appointment</option>
+                <option value="Tour">Tour Newborn Unit</option>
+                <option value="PreAdmission">Admission Pre-Registration</option>
+                <option value="Lactation">Lactation Consultation</option>
+                <option value="FollowUp">Follow-Up Appointment</option>
+            </select>
+            <button type="button" class="next">Next</button>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="form-step">
+            <h2>Date & Time</h2>
+            <input type="date" name="date" required>
+            <input type="time" name="time">
+            <button type="button" class="prev">Back</button>
+            <button type="button" class="next">Next</button>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="form-step">
+            <h2>Parent Details</h2>
+            <input type="text" name="parentName" placeholder="Full Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email Address">
+            <input type="text" name="babyDetails" placeholder="Baby Details (optional)">
+            <textarea name="notes" placeholder="Additional notes"></textarea>
+            <label class="checkbox">
+                <input type="checkbox" required> I consent to data processing
+            </label>
+            <button type="button" class="prev">Back</button>
+            <button type="button" class="next">Next</button>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="form-step">
+            <h2>Review & Confirm</h2>
+            <div id="summary"></div>
+            <button type="button" class="prev">Back</button>
+            <button type="submit" class="confirm">Confirm Booking</button>
+        </div>
+
+    </form>
+
+    <!-- CONFIRMATION -->
+    <div id="confirmation" class="hidden">
+        <h2>✅ Booking Successful</h2>
+        <p>Your Booking ID:</p>
+        <strong id="bookingId"></strong>
+        <p>A confirmation email has been sent.</p>
+    </div>
+
+</div>
+</section>
+
+    <!-- footer section -->
+    <footer id="main-footer">
+
+    <!-- Watermark -->
+    <div class="footer-watermark"></div>
+
+    <div class="footer-container">
+
+        <!-- Column 1 -->
+        <div class="footer-col">
+            <h3>NBU Quick Links</h3>
+            <ul>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Team.html">Meet the Team</a></li>
+                <li><a href="visiting-rules.html">Visiting Rules</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+            <h3>Parent Support</h3>
+            <ul>
+                <li><a href="parent-resources.html">Parent Resources</a></li>
+                <li><a href="breastfeeding.html">Breastfeeding Support</a></li>
+                <li><a href="nutrition.html">Nutrition & Lactation</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+            <h3>Legal & Policies</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Data Protection (GDPR)</a></li>
+                <li><a href="#">Patient Rights</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-col">
+            <h3>Emergency Contacts</h3>
+            <ul>
+                <li><a href="#">Emergency Hotline: 0800-123-456</a></li>
+                <li><a href="#">NICU Desk: +254 700 000 000</a></li>
+                <li><a href="#">NBU Nursing Station</a></li>
+                <li><a href="contact.html">Contact Page</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>© <span id="current-year"></span> KNH Newborn Unit — All Rights Reserved</p>
+        <p class="design-note">Designed for educational purposes</p>
+    </div>
+
+    </footer><!-- footer section -->
+    
+    <!-- footer year js -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const yearSpan = document.getElementById("current-year");
+            const currentYear = new Date().getFullYear();
+            if (yearSpan) {
+                yearSpan.textContent = currentYear;
+            }
+        });
+    </script>
+
+    <script src="booking.js"></script>
+</body>
+</html>
+
+</body>
+</html>

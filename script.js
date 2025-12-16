@@ -28,17 +28,17 @@ const doctorTeam = [
     {
         name: "Dr. Evans Odhiambo",
         role: "Neonatal Surgeon",
-        img: "./img/about img/doc7.jpg"
+        img: "./img/about-img/doc7.jpg"
     },
     {
         name: "Dr. Beatrice Mwende",
         role: "Respiratory Specialist",
-        img: "./img/about img/doc4.jpg"
+        img: "./img/about-img/doc4.jpg"
     },
     {
         name: "Dr. Kelvin Mutai",
         role: "Neonatal Emergency Consultant",
-        img: "./img/about img/doc2.jpg"
+        img: "./img/about-img/doc2.jpg"
     }
 ];
 
@@ -91,17 +91,17 @@ const nurseTeam = [
     {
         name: "Nurse Angela",
         role: "NICU Senior Nurse",
-        img: "./img/about img/doc5.jpg"
+        img: "./img/about-img/doc5.jpg"
     },
     {
         name: "Nurse Santoz",
         role: "Kangaroo Mother Care Specialist",
-        img: "./img/about img/nurse6 (1).jpg"
+        img: "./img/about-img/nurse6 (1).jpg"
     },
     {
         name: "Nurse Brenda",
         role: "HDU Nurse",
-        img: "./img/about img/nurse2.jpg"
+        img: "./img/about-img/nurse2.jpg"
     }
 ];
 
