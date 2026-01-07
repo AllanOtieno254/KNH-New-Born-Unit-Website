@@ -19,7 +19,7 @@ The website is built using **pure HTML, CSS, and JavaScript** for **maximum comp
 
 ---
 
-## 🎯 Key Objectives
+## 🎯 Key Objectives 
 
 - Create a **clean, modern hospital website**
 - Ensure **mobile-first responsiveness**
